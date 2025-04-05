@@ -4,7 +4,7 @@ on:
   # Runs on pushes targeting the `main` branch.
   # Change this to `master` if you're using `master` as the default branch.
   push:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+          fetch_depth: 0 # Not needed if lastUpdated is not enabled
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -41,6 +41,9 @@ jobs:
           npm install -D pnpm@latest
           npm i -g yarn
           npm install
+
+      - name: Grant execute permission
+        run: chmod +x ./node_modules/.bin/vitepress
 
       - name: Build VitePress site
         run: |
