@@ -13,6 +13,12 @@ hero:
     - theme: brand
       text: Ссылки
       link: /links
+    - theme: brand
+      text: Разное
+      link: /other/
+    - theme: brand
+      text: Руководства
+      link: /guide/guide
 
 features:
   - title: Фрагменты кода

@@ -10,7 +10,9 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Шпаргалки', link: '/markdown-examples' },
-      { text: 'Ссылки', link: '/links' }
+      { text: 'Ссылки', link: '/links' },
+      { text: 'Разное', link: '/other/' },
+      { text: 'Руководства', link: '/guide/guide' }
     ],
 
     sidebar: [
@@ -76,12 +78,27 @@ export default defineConfig({
           {text: 'Реактивность', link: '/basics_vue/reactivity'},
           {text: 'Script Setup', link: '/basics_vue/script-setup'},
           {text: 'Suspense', link: '/basics_vue/suspense'},
+          {text: 'defineModel', link: '/basics_vue/defineModel'},
+          {text: 'Template Refs', link: '/basics_vue/templateRefs'},
+          {text: 'Watch Effect', link: '/basics_vue/watchEffect'},
         ]
+      },
+      {
+        text: 'Руководства',
+        link: '/guide/guide'
+      },
+      {
+        text: 'Разное',
+        link: '/other/'
+      },
+      {
+        text: 'Ссылки',
+        link: '/links/'
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/AlexeyZelenko/vitepress' }
     ]
   }
 });
