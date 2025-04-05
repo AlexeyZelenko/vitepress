@@ -6,6 +6,14 @@ export default defineConfig({
   description: "Just playing around",
   base: '/vitepress/',
   themeConfig: {
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: '...',
+        apiKey: '...',
+        indexName: '...'
+      }
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -81,6 +89,8 @@ export default defineConfig({
           {text: 'defineModel', link: '/basics_vue/defineModel'},
           {text: 'Template Refs', link: '/basics_vue/templateRefs'},
           {text: 'Watch Effect', link: '/basics_vue/watchEffect'},
+          {text: 'Slots', link: '/basics_vue/slot'},
+          {text: 'Вопросы по Vue - 1', link: '/basics_vue/vue_questions'},
         ]
       },
       {
